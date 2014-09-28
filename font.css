@@ -1,0 +1,99 @@
+/*
+例1（小米米官网）：font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+
+
+例2（淘宝技术研发中心）：     font: 12px/1.5 Tahoma,Helvetica,Arial,'宋体',sans-serif;
+
+
+
+例3（加网 ）：      font: 14px/1.5 'Microsoft YaHei',arial,tahoma,\5b8b\4f53,sans-serif;
+
+
+
+例4（淘宝UED）：      font: 12px/1 Tahoma,Helvetica,Arial,"\5b8b\4f53",sans-serif;
+
+
+
+例5（一淘UX）:     font-family: Helvetica, 'Hiragino Sans GB', 'Microsoft Yahei', '微软雅黑', Arial, sans-serif;
+
+
+
+font: 12px/1 Tahoma,Helvetica,Arial,"\5b8b\4f53",sans-serif;
+
+
+1em=
+
+
+*/
+
+/*高级em与px换算：
+任意浏览器的默认字体高度16px（16像素）。所有未经调整的浏览器都符合: 1em=16px。那么12px=0.75em,10px=0.625em。为了简化font-size的换算，需要在css中的body选择器中声明font-size=62.5%，这就使em值变为 16px*62.5%=10px, 这样12px=1.2em, 10px=1em, 也就是说只需要将你的原来的px数值除以10，然后换上em作为单位就行了。
+具体使用时候：
+我们在对全体html标签声明初始一次font-size=62.5%
+如：
+*{font-size=62.5%}*/
+
+body{font-size:62.5%}
+h1{font-size:3.2em}
+h2{font-size:2.4em}
+h3{font-size:1.8em}
+h4{font-size:1.4em}
+h5{font-size:1.2em}
+h6{font-size:1em}
+ 
+
+
+
+
+
+
+
+
+
+/*******正文字体*****/
+
+body{
+    
+}
+p {
+font-size: 1.4em;
+font-family:Tahoma,Arial,Helvetica,tahoma,verdana, ????SimSun, ????????STXihei,sans-serif;
+}
+
+
+
+
+/***标题字体******/
+h1, h2, h3, h4, h5, h6 {
+font-family:Georgia, "Times New Roman ", "Microsoft YaHei ", " ????????",STXihei, " ????????",serif;
+}
+/*
+YUI 3.5.0 (build 5089)
+Copyright 2012 Yahoo! Inc. All rights reserved.
+Licensed under the BSD License.
+http://yuilibrary.com/license/
+*/
+body {
+font:13px/1.231 arial,helvetica,clean,sans-serif;
+*font-size:small;
+*font:x-small
+}
+
+select,input,button,textarea {
+font:99% arial,helvetica,clean,sans-serif
+}
+
+table {
+font-size:inherit;
+font:100%
+}
+
+pre,code,kbd,samp,tt {
+font-family:monospace;
+*font-size:108%;
+line-height:100%
+}
+
+#yui3-css-stamp.cssfonts {
+display:none
+}

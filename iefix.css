@@ -1,0 +1,37 @@
+.fix-inline-block{
+     display:inline-block;/*修复ie inline-block不排在一行的错误*/
+    *display: inline;
+    *zoom:1;
+}
+
+/*
+IE6中浮动边距翻倍解决办法： 加入display:inline; 例如： 
+*/
+ * html #warning{  display:inline; } 
+ 
+ 
+ /* Clear Fix */
+ 
+ .clearfix:after
+{
+content:".";
+display:block;
+height:0;
+clear:both;
+visibility:hidden;
+}
+.clearfix
+{
+display:inline-block;
+}
+/* Hide from IE Mac */
+.clearfix {display:block;}
+/* End hide from IE Mac */
+/* end of clearfix */
+
+#1 { color: #333; } /* Moz */ 
+* html #1 { color: #666; } /* IE6 */ 
+*+html #1 { color: #999; } /* IE7 */
+
+/*最小宽度*/
+#container{ min-width: 600px; width:expression(document.body.clientWidth < 600? "600px": "auto" );}
